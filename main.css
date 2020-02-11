@@ -13,3 +13,13 @@ body {
   width:45%;
   length:45%;
 }
+
+.btn-primary {
+	background-color: darkGrey;
+	border-color: gold;
+
+}
+
+.btn-primary:hover {
+	background-color: gold;
+}
