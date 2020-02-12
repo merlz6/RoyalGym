@@ -23,3 +23,12 @@ body {
 .btn-primary:hover {
 	background-color: gold;
 }
+
+.footerSMicons {
+	width: 5%;
+	height: 5%;
+}
+
+#horizontalicons li{
+    display: inline;
+}
