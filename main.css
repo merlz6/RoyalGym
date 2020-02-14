@@ -32,3 +32,21 @@ body {
 #horizontalicons li{
     display: inline;
 }
+
+.footerDiv {
+  background-color: white;
+  width:100%;
+
+}
+
+#bannerPhoto {
+background-image: url("https://www.essentialbjj.com/wp-content/uploads/2017/03/img-main-1.jpg");
+
+  height:550px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
