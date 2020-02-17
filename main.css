@@ -41,11 +41,8 @@ body {
 }
 
 #bannerPhoto {
-background-image: url("https://www.essentialbjj.com/wp-content/uploads/2017/03/img-main-1.jpg");
-
+  background-image: url("https://www.essentialbjj.com/wp-content/uploads/2017/03/img-main-1.jpg");
   height:550px;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,4 +61,11 @@ body {
 }
 .socialmediaDiv {
   margin-right:10px;
+}
+
+#hero {
+  min-height: 400px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center top;
 }
