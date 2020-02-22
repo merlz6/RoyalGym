@@ -69,3 +69,14 @@ body {
   background-size: cover;
   background-position: center top;
 }
+.instructorDiv {
+  display: flex;
+  flex-direction: row;
+  margin:15px;
+  padding:10px;
+  border-bottom:1px solid gold;
+
+}
+.instructorPhoto {
+  margin-right:25px;
+}
