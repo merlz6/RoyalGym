@@ -5,6 +5,9 @@
 body {
   background-color: black;
 }
+p {
+  color:ghostWhite;
+}
 
 .logonav {
   width: 25%;
@@ -96,6 +99,15 @@ body {
   margin-bottom: 30px;
 }
 
+#AdultsbannerPhoto {
+  background-image: url("./images/03896688-73CF-4210-ACCD-B51EF392FA5D.jpeg");
+  height: 338.5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .bannerPhotoHeaderText {
   padding-top: 1em;
   font-size: 1.50em;
@@ -130,4 +142,9 @@ body {
   margin-inline-start: 0px;
   margin-top: 20px;
   text-size-adjust: 100%;
+}
+
+.adultsh5{
+  color:gold;
+  font-size:1.5em;
 }

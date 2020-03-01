@@ -11,12 +11,10 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-<!-- BODY -->
 
 <body>
-  <!-- START OF NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a href="./index.html" class="navbar-left"><img class="logonav" src="./images/royal_logo.jpg" /></a>
+  <a href="#" class="navbar-left"><img class="logonav" src="./images/crown-removebg-preview.png" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,14 +26,14 @@
           About us
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="./about.html">What is Jiu Jitsu</a>
+          <a class="dropdown-item" href="./aboutWhat.html">What is Jiu Jitsu</a>
           <a class="dropdown-item" href="./academy.html">Academy</a>
           <a class="dropdown-item" href="./instructors.html">Instructors</a>
-          <a class="dropdown-item" href="./marceloG.html">Marcelo Garcia Association</a>
+          <a class="dropdown-item" href="#">Marcelo Garcia Association</a>
         </div>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Schedule</a>
@@ -46,78 +44,38 @@
 
   </div>
 </nav>
-<!-- END OF NAVBAR -->
 
-<!-- DIV HOLDING BOTH CARDS -->
-<div style="display:flex; flex-direction:row; margin:25px; justify-content:space-around;">
-<!-- LEFT SIDE CARD BELOW -->
-  <div class="card" style="width: 45%;  ">
+  <div id="bannerPhoto">
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4024.5696509243803!2d-73.61969286179705!3d40.762714900759526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c287a2a6ea6447%3A0x9767df9be46d8d15!2sEast%20Williston%20School%20District!5e0!3m2!1sen!2sus!4v1581975016569!5m2!1sen!2sus" class="card-img-top" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  <div class="card-body">
-    <h5 class="card-title text-center">Royal Jiu Jitsu Academy</h5>
-    <address class="card-text text-center">123 Jericho Turnppike, <br />
-    Mineola, New York 11501
-    </address>
-    <a href="#" class="btn btn-primary">Directions</a>
   </div>
-</div>
-<!-- END of LEFT CARD -->
 
-<!-- RIGHT SIDE CARD BELOW -->
-<div class="card" style="width: 45%; ">
 
-  <div class="card-body">
-    <div class="col-md-10 mb-md-0 text-center">
-      <h2 class="font-weight-bold my-4">Contact Us</h2>
-      <form id="contact-form">
+  <!-- Some Text Content -->
+  <div class="container ">
+    <h3 class="aboutWhatH3" style="color:gold; margin-top:40px">MARCELO GARCIA ASSOCIATION</h3>
+    <p style="color:ghostWhite; border-top: .5px solid gold; padding-top:35px;"">
+Marcelo Garcia is a very prominent figure in Brazilian Jiu Jitsu and Submission Grappling.  He is known worldwide as one of the best instructors and competitors in the sport.  People come from all over the world just to train with him and be one of his students because of his high level of skill, immense knowledge of Jiu Jitsu, attention to details, love for Jiu Jitsu, humor, kindness, and personality.  Marcelo Jiu Jitsu Academy has been operating in NYC for the past 10 years.  Everyone in the sport knows about his academy and the force that comes with him and his students.  All of Royal Jiu Jitsu Academy’s instructors train directly under Marcelo Garcia.  Royal Jiu Jitsu strives to bring Mineola the same quality and service that the instructors experience as being his students.  Royal JJ is very honored to be a Marcelo Garcia Association and to have the opportunity to keep his legacy alive.
 
-        <div class="row">
-
-          <div class="col-md-5">
-            <div class="">
-              <input type="text" placeholder="First Name" class="form-control">
-            </div>
-            <div class="">
-              <input type="text" placeholder="Last Name" class="form-control">
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-5">
-            <div class="">
-              <input type="text" placeholder="Email Address" class="form-control">
-            </div>
-          </div>
-        </div>
-      </form>
-      <!-- Submit Button -->
-      <div>
-        <a class="btn btn-primary">Send</a>
-        <!-- End -->
-      </div>
-    </div>
+      </p>
   </div>
-</div>
-<!-- END OF RIGHT CARD -->
-</div>
+<!-- END OF CONTAINER -->
 
-<!-- FOOTER BELOW-->
-      <div class="Container footerDiv">
+<!-- FOOTER -->
+      <div class="Container footerDiv" >
           <div class="row">
             <div class="col-sm">
               <div class="col-sm columns">
                 <a href="#" class="navbar-left"><img class="footerlogo" src="./images/royal_logo.jpg" /></a>
               </div>
             </div>
-            <div class="col-sm">
-              <p class="addressBox">
+            <div class="col-sm text-center"  >
 
-                123 Jericho Turnpike,
-                Mineola, NY 11501
+              <p style=" margin:50px 0 0 0;">
+                123 Jericho Turnpike,<br />
+                Mineola, NY 11501 <br />
                 (XXX) XXX-XXXX
               </p>
+
             </div>
             <div class="col-sm text-center socialmediaDiv">
               <label>Follow us at</label>
