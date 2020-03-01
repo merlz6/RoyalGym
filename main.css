@@ -1,48 +1,48 @@
 .linkDiv {
   justify-content: space-between;
 }
-body {
-  background-color: lightGrey;
 
+body {
+  background-color: black;
 }
-.logonav{
-  width:25%;
-  length:25%;
+
+.logonav {
+  width: 25%;
+  length: 25%;
 }
+
 .footerlogo {
-  width:85%;
-  height:85%;
+  width: 85%;
+  height: 85%;
 }
 
 .btn-primary {
-	background-color: darkGrey;
-	border-color: gold;
-
+  background-color: darkGrey;
+  border-color: gold;
 }
 
 .btn-primary:hover {
-	background-color: gold;
+  background-color: gold;
 }
 
 .footerSMicons {
-	width: 8%;
-	height: 8%;
+  width: 8%;
+  height: 8%;
 }
 
-#horizontalicons li{
-    display: inline;
+#horizontalicons li {
+  display: inline;
 }
 
 .footerDiv {
   /* position: relative; */
   background-color: white;
-  width:100%;
-
+  width: 100%;
 }
 
 #bannerPhoto {
   background-image: url("https://www.essentialbjj.com/wp-content/uploads/2017/03/img-main-1.jpg");
-  height:550px;
+  height: 550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,11 +56,11 @@ body {
 .addressBox {
   position: absolute;
   bottom: 0;
-
   /* border:1px solid black; */
 }
+
 .socialmediaDiv {
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 #hero {
@@ -69,14 +69,65 @@ body {
   background-size: cover;
   background-position: center top;
 }
+
 .instructorDiv {
   display: flex;
   flex-direction: row;
-  margin:15px;
-  padding:10px;
-  border-bottom:1px solid gold;
-
+  margin: 15px;
+  padding: 10px;
+  border-bottom: 1px solid gold;
 }
+
 .instructorPhoto {
-  margin-right:25px;
+  margin-right: 25px;
+}
+
+.iconPhoto {
+  margin-top: 20px;
+  width: 100%
+}
+
+#AboutWhatbannerPhoto {
+  background-image: url("https://lh3.googleusercontent.com/proxy/8fRsaTAilmR292VwBR51wald2LeKY7hdSfdbGu1iJimD5fOW31souqQnVm4ecpNw6YRq8zU-kpG8i9R_yRdEMnl8eBeJRlAF_0PkenPnfyZkcyXp2W3qqg1rRhw2AO3rl61w-wPE9Pk");
+  height: 338.5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bannerPhotoHeaderText {
+  padding-top: 1em;
+  font-size: 1.50em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 2em;
+  margin-inline-end: 2em;
+  color: ghostWhite;
+}
+
+.entry-content {
+  color: Ghostwhite;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+
+.aboutWhatH3 {
+
+  box-sizing: border-box;
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  height: 38px;
+  line-height: 38px;
+  margin-block-end: 20px;
+  margin-block-start: 20px;
+  margin-bottom: 20px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 20px;
+  text-size-adjust: 100%;
 }
