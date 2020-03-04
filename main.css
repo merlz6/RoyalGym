@@ -40,6 +40,7 @@ p {
 .footerDiv {
   /* position: relative; */
   background-color: white;
+  color:gold;
   width: 100%;
 }
 
@@ -147,4 +148,8 @@ body {
 .adultsh5{
   color:gold;
   font-size:1.5em;
+}
+
+a {
+  color:gold;
 }
