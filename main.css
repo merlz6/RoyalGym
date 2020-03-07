@@ -92,9 +92,10 @@ body {
 }
 
 #AboutWhatbannerPhoto {
-  background-image: url("https://lh3.googleusercontent.com/proxy/8fRsaTAilmR292VwBR51wald2LeKY7hdSfdbGu1iJimD5fOW31souqQnVm4ecpNw6YRq8zU-kpG8i9R_yRdEMnl8eBeJRlAF_0PkenPnfyZkcyXp2W3qqg1rRhw2AO3rl61w-wPE9Pk");
-  height: 338.5px;
+  background-image: url("./images/armbarphoto.jpeg");
+  height: 400px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   position: relative;
   margin-bottom: 30px;
