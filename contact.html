@@ -59,9 +59,9 @@
 <!-- END OF NAVBAR -->
 
 <!-- DIV HOLDING BOTH CARDS -->
-<div style="display:flex; flex-direction:row; margin:25px; justify-content:space-around;">
+<div style="display:flex; flex-direction:row; margin:25px; justify-content:space-around; min-height:600px;">
 <!-- LEFT SIDE CARD BELOW -->
-  <div class="card" style="width: 45%;  ">
+  <div class="card" style="width: 45%; ">
 
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4024.5696509243803!2d-73.61969286179705!3d40.762714900759526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c287a2a6ea6447%3A0x9767df9be46d8d15!2sEast%20Williston%20School%20District!5e0!3m2!1sen!2sus!4v1581975016569!5m2!1sen!2sus" class="card-img-top" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   <div class="card-body">
@@ -75,16 +75,13 @@
 <!-- END of LEFT CARD -->
 
 <!-- RIGHT SIDE CARD BELOW -->
-<div class="card" style="width: 45%; ">
-
-  <div class="card-body">
-    <div class="col-md-10 mb-md-0 text-center">
+<div class="card" style="width: 45%; text-align: center; ">
       <h2 class="font-weight-bold my-4">Contact Us</h2>
       <form id="contact-form">
 
         <div class="row">
 
-          <div class="col-md-5">
+          <div class="col-md-5" >
             <div class="">
               <input type="text" placeholder="First Name" class="form-control" id="firstNameInput">
             </div>
@@ -101,14 +98,23 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Leave a comment</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+          </div>
+        </div>
       </form>
       <!-- Submit Button -->
       <div>
         <a class="btn btn-primary" onclick="getEmails()">Send</a>
         <!-- End -->
       </div>
-    </div>
-  </div>
+
 </div>
 <!-- END OF RIGHT CARD -->
 </div>
