@@ -157,7 +157,7 @@ a {
 .iconShell {
   border-left:.5px solid gold;
   border-right:.5px solid gold;
-  padding:10px;
+  padding:.60em 0;
   justify-content: space-around;
   background-color:gold;
   display:flex;
