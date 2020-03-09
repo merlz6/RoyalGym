@@ -87,10 +87,13 @@ body {
 }
 
 .iconPhoto {
-  margin-top: 20px;
-  width: 100%
+height:120px;
+width:150px;
 }
+.iconHolderDiv {
+  width:8%;
 
+}
 #AboutWhatbannerPhoto {
   background-image: url("./images/armbarphoto.jpeg");
   height: 400px;
