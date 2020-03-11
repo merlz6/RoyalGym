@@ -169,3 +169,12 @@ a {
 .iconPhoto {
   margin:.2em;
 }
+
+.btn-primary.schedule {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  justify-content:center;
+}
