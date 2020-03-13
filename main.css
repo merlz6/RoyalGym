@@ -14,8 +14,8 @@ a {
 
 h3 {
   color: gold;
-  margin-left: 2em;
-  padding-top: 1em;
+  /* margin-left: 2em;
+  padding-top: 1em; */
 }
 
 /*End of Root Selectors*/
@@ -107,7 +107,6 @@ margin-bottom:0;
   font-size: 18px;
   line-height: 1.4em;
   margin-bottom: 40px;
-  border-top: .5px solid gold;
   padding-bottom:25px;
   min-height:500px;"
 }
@@ -247,7 +246,7 @@ margin-bottom:0;
 }
 
 #AdultsbannerPhoto {
-  background-image: url("./images/03896688-73CF-4210-ACCD-B51EF392FA5D.jpeg");
+  background-image: url("./images/04A66DC5-A59E-4F92-B5BE-CD265A68C2E3.jpg");
   height: 338.5px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -287,7 +286,7 @@ margin-bottom:0;
 
 #associationContentPtag {
   color:ghostWhite;
-  border-top: .5px solid gold;
+  border-top: 1px solid gold;
   padding-top: 35px;
 }
 
@@ -295,7 +294,7 @@ margin-bottom:0;
   text-align: center;
   margin:3em 0;
   padding-bottom: 3em;
-  border-bottom: .5px solid gold;
+  border-bottom: 1px solid gold;
 }
 
 #associationContentImg img {
@@ -326,7 +325,7 @@ margin-bottom:0;
 
 #academyPagePtag {
   color: ghostWhite;
-  border-top: .5px solid gold;
+
   padding: 20px;
 }
 
@@ -335,8 +334,6 @@ margin-bottom:0;
 }
 
 #adultColDiv {
-  border-top:.5px;
-  solid: gold;
   height:450px;
   padding-top:35px;
   margin: 25px 0;
