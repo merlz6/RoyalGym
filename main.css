@@ -184,7 +184,7 @@ font-size: 1.30em;
   padding-top: 56.25%;
   position: relative;
 }
- 
+
 .iframe-container iframe {
   border: 0;
   height: 100%;
@@ -287,7 +287,7 @@ font-size: 1.30em;
   text-align:center;
   margin:3em 0;
   padding-bottom:3em;
-  border-bottom: .5px solid gold; 
+  border-bottom: .5px solid gold;
 }
 
 #associationContentImg img {
@@ -311,3 +311,7 @@ font-size: 1.30em;
 }
 
 /*End of ID Selectors*/
+
+.contactForm {
+  margin:1em;
+}
