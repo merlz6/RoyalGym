@@ -1,12 +1,40 @@
+/*Start of Root Selectors*/
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+p {
+  color:ghostWhite;
+}
+
+a {
+  color:gold;
+}
+
+h3 {
+  color: gold;
+  margin-left: 2em;
+  padding-top: 1em;
+}
+
+/*End of Root Selectors*/
+
+
+
+
+/*Start of Classe Selectors*/
+.iconDiv {
+  width: 100%;
+}
 .linkDiv {
   justify-content: space-between;
 }
 
-body {
-  background-color: black;
-}
-p {
-  color:ghostWhite;
+.iconPhotoText {
+color: black;
+font-weight: 700;
+font-size: 1.30em;
 }
 
 .logonav {
@@ -17,6 +45,13 @@ p {
 .footerlogo {
   width: 85%;
   height: 85%;
+}
+
+.footerDiv {
+  /* position: relative; */
+  background-color: white;
+  color:gold;
+  width: 100%;
 }
 
 .btn-primary {
@@ -34,46 +69,10 @@ p {
   margin:.7em;
 }
 
-#horizontalicons li {
-  display: inline;
-}
-
-.footerDiv {
-  /* position: relative; */
-  background-color: white;
-  color:gold;
-  width: 100%;
-}
-
-#bannerPhoto {
-  background-image: url("https://www.essentialbjj.com/wp-content/uploads/2017/03/img-main-1.jpg");
-  height: 475px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.addressBox {
-  position: absolute;
-  bottom: 0;
-  /* border:1px solid black; */
-}
-
 .socialmediaDiv {
   margin-right: 10px;
 }
 
-#hero {
-  min-height: 400px;
-  height: 50vh;
-  background-size: cover;
-  background-position: center top;
-}
 
 .instructorDiv {
   display: flex;
@@ -88,26 +87,8 @@ body {
 }
 
 .iconPhoto {
-height:100px;
-width:100px;
-}
-#AboutWhatbannerPhoto {
-  background-image: url("./images/armbarphoto.jpeg");
-  height: 400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-#AdultsbannerPhoto {
-  background-image: url("./images/03896688-73CF-4210-ACCD-B51EF392FA5D.jpeg");
-  height: 338.5px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 30px;
+  height:100px;
+  width:100px;
 }
 
 .bannerPhotoHeaderText {
@@ -126,10 +107,12 @@ width:100px;
   font-size: 18px;
   line-height: 1.4em;
   margin-bottom: 40px;
+  border-top: .5px solid gold;
+  padding-bottom:25px;
+  min-height:500px;"
 }
 
 .aboutWhatH3 {
-
   box-sizing: border-box;
   display: block;
   font-family: Montserrat, sans-serif;
@@ -144,15 +127,13 @@ width:100px;
   margin-inline-start: 0px;
   margin-top: 20px;
   text-size-adjust: 100%;
+  color:gold;
+  margin-top:40px;
 }
 
 .adultsh5{
   color:gold;
   font-size:1.5em;
-}
-
-a {
-  color:gold;
 }
 
 .iconShell {
@@ -188,3 +169,145 @@ a {
   font-size:1.25em;
   font-weight:600;
 }
+.card {
+  width: 45%;
+  text-align: center;
+}
+.card-img-top {
+  border: 0;
+}
+
+.iframe-container {
+  overflow: hidden;
+  /*Calculated from the aspect ration of the
+  content (in case of 16:9 it is 9/16= 0.5625)*/
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*End of Classe Selectors*/
+
+
+
+
+/*Start of ID Selectors*/
+#newsletterHeader {
+  color:gold;
+}
+
+#horizontalicons li {
+  display: inline;
+}
+
+#bannerPhoto {
+  background-image: url("https://www.essentialbjj.com/wp-content/uploads/2017/03/img-main-1.jpg");
+  height: 475px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#homeContactDiv {
+  text-align: center;
+}
+
+#hero {
+  min-height: 400px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center top;
+}
+
+#AboutWhatbannerPhoto {
+  background-image: url("./images/armbarphoto.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#AdultsbannerPhoto {
+  background-image: url("./images/03896688-73CF-4210-ACCD-B51EF392FA5D.jpeg");
+  height: 338.5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#homePageAddress {
+  margin:50px 0 0 0;
+  color: black;
+}
+
+#contactPageCardDiv {
+  display:flex;
+  flex-direction:row;
+  margin:25px;
+  justify-content:space-around;
+  min-height:600px;
+}
+
+#contactPageAddress {
+  position: absolute;
+  bottom: 0;
+  color: black;
+  /* border:1px solid black; */
+}
+
+#scheduleHeaderText {
+  color:gold;
+  margin-bottom:20px;
+  text-align: center;
+}
+
+#associationPageDiv {
+  min-height:600px;
+}
+
+#associationContentPtag {
+  color:ghostWhite;
+  border-top: .5px solid gold;
+  padding-top:35px;
+}
+
+#associationContentImg {
+  text-align:center;
+  margin:3em 0;
+  padding-bottom:3em;
+  border-bottom: .5px solid gold; 
+}
+
+#associationContentImg img {
+  margin-top:2em;
+}
+
+#kidsPagePtag {
+  padding-top:3em;
+}
+
+#kidsPageBullets {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding-top:3em;
+}
+
+#kidsPageBullets ul li strong {
+  color:gold;
+  font-size:1.25em;
+}
+
+/*End of ID Selectors*/

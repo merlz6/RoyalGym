@@ -61,22 +61,20 @@
 <!-- Schedule Content -->
 <div class="Container">
     
-  <h3 class="Schedule" style="color:gold; margin-bottom:20px;">Royal Academy Schedule</h3>
+  <h3 id="scheduleHeaderText" >Royal Academy Schedule</h3>
+<!-- 
+  <div style="border-top: .5px solid gold; margin-bottom:25px; border-bottom: .5px solid gold; "> -->
 
-  <div style="border-top: .5px solid gold; margin-bottom:25px; border-bottom: .5px solid gold; ">
-
-  <div class="schedule-responsive">
-    <iframe src="./images/ROYAL_SCHEDULE.pdf" width="100%" height="1175px">
+  <div class="iframe-container">
+    <iframe src="./images/ROYAL_SCHEDULE.pdf">
     </iframe>
-      <p>
+<!-- Do we need this button? -->
+<!--       <p>
         <a href="./images/ROYAL_SCHEDULE.pdf" class="button btn-primary schedule">
         <i class="fa fa-download"></i>Download Schedule</a>
-      </p>
+      </p> -->
   </div>
-
 </div>
-
-
 <!-- END OF CONTENT -->
 
 <!-- FOOTER BELOW-->
@@ -88,8 +86,7 @@
               </div>
             </div>
             <div class="col-sm">
-              <p class="addressBox">
-
+              <p id="contactPageAddress">
                 123 Jericho Turnpike,
                 Mineola, NY 11501
                 (XXX) XXX-XXXX
