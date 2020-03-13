@@ -198,7 +198,6 @@ font-size: 1.30em;
 
 
 
-
 /*Start of ID Selectors*/
 #newsletterHeader {
   color:gold;
@@ -268,50 +267,99 @@ font-size: 1.30em;
 }
 
 #scheduleHeaderText {
-  color:gold;
-  margin-bottom:20px;
+  color: gold;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 #associationPageDiv {
-  min-height:600px;
+  min-height: 600px;
 }
 
 #associationContentPtag {
   color:ghostWhite;
   border-top: .5px solid gold;
-  padding-top:35px;
+  padding-top: 35px;
 }
 
 #associationContentImg {
-  text-align:center;
+  text-align: center;
   margin:3em 0;
-  padding-bottom:3em;
+  padding-bottom: 3em;
   border-bottom: .5px solid gold;
 }
 
 #associationContentImg img {
-  margin-top:2em;
+  margin-top: 2em;
 }
 
 #kidsPagePtag {
-  padding-top:3em;
+  padding-top: 3em;
 }
 
 #kidsPageBullets {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  padding-top:3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3em;
 }
 
 #kidsPageBullets ul li strong {
-  color:gold;
-  font-size:1.25em;
+  color: gold;
+  font-size: 1.25em;
 }
 
 /*End of ID Selectors*/
 
 .contactForm {
-  margin:1em;
+  margin: 1em;
+}
+
+#academyPagePtag {
+  color: ghostWhite;
+  border-top: .5px solid gold;
+  padding: 20px;
+}
+
+#academyPageH3 {
+  margin-top: 40px;
+}
+
+#adultColDiv {
+  border-top:.5px;
+  solid: gold;
+  height:450px;
+  padding-top:35px;
+  margin: 25px 0;
+}
+
+#adultPics {
+  width:50%;
+  text-align:center;
+}
+
+#adultPics img {
+  width: 300px;
+}
+
+#adultColLeft {
+  width:50%;
+  text-align:center;
+}
+
+#adultColRight {
+  width: 50%;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
