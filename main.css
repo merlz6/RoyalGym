@@ -1,11 +1,11 @@
 /*Start of Root Selectors*/
 body {
-  background-color: black;
+  background-color: white;
   overflow-x: hidden;
 }
 
 p {
-  color:ghostWhite;
+  color:black;
 }
 
 a {
@@ -40,6 +40,10 @@ margin-bottom:0;
 .logonav {
   width: 25%;
   length: 25%;
+}
+
+.navbar {
+  background-color: lightgrey;
 }
 
 .footerlogo {
