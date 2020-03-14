@@ -6,6 +6,7 @@ body {
 
 p {
   color:black;
+  font-family: Montserrat;
 }
 
 a {
@@ -214,7 +215,14 @@ margin-bottom:0;
 }
 .aboutwhatPtag {
   /* margin:.75em 0em 1.25em 0em; */
+  font-size: 1.2em;
   padding:1.25em;
+}
+.card-text{
+  font-size: 1.2em;
+}
+.academyPhoto {
+  width:60%;
 }
 /*
 .aboutWhatInnerHolder {
@@ -307,9 +315,10 @@ margin-bottom:0;
 }
 
 #associationContentPtag {
-  color:ghostWhite;
+  color:black;
   border-top: 1px solid rgb(189,158,6);
   padding-top: 35px;
+  font-size: 1.2em;
 }
 
 #associationContentImg {
@@ -346,12 +355,20 @@ margin-bottom:0;
 }
 
 #academyPagePtag {
-  color: ghostWhite;
+  color: black;
 
-  padding: 20px;
+  padding: 1em;
+  padding-top: 0em;
+  font-size: 1.3em;
+}
+#academyPagePtag2 {
+  color: black;
+
+  padding: 1.5em 1em;
+  font-size: 1.3em;
 }
 
-#academyPageH3 {
+#PageH3 {
   margin-top: 40px;
 }
 
