@@ -9,11 +9,11 @@ p {
 }
 
 a {
-  color:gold;
+  color: rgb(189,158,6);
 }
 
 h3 {
-  color: gold;
+  color: rgb(189,158,6);
   /* margin-left: 2em;
   padding-top: 1em; */
 }
@@ -43,7 +43,7 @@ margin-bottom:0;
 }
 
 .navbar {
-  background-color: lightgrey;
+  background-color: rgb(230,230,230);
 }
 
 .footerlogo {
@@ -54,17 +54,17 @@ margin-bottom:0;
 .footerDiv {
   /* position: relative; */
   background-color: white;
-  color:gold;
+  color: rgb(189,158,6);
   width: 100%;
 }
 
 .btn-primary {
   background-color: darkGrey;
-  border-color: gold;
+  border-color: rgb(189,158,6);
 }
 
 .btn-primary:hover {
-  background-color: gold;
+  background-color: rgb(189,158,6);
 }
 
 .footerSMicons {
@@ -83,7 +83,7 @@ margin-bottom:0;
   flex-direction: row;
   margin: 15px;
   padding: 10px;
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid rgb(189,158,6);
 }
 
 .instructorPhoto {
@@ -130,19 +130,19 @@ margin-bottom:0;
   margin-inline-start: 0px;
   margin-top: 20px;
   text-size-adjust: 100%;
-  color:gold;
+  color: rgb(189,158,6);
   margin-top:40px;
 }
 
 .adultsh5{
-  color:gold;
+  color: rgb(189,158,6);
   font-size:1.5em;
 }
 
 .iconShell {
 
   justify-content: space-around;
-  background-color:gold;
+  color: rgb(189,158,6);
   display:flex;
   flex-direction:row;
   text-align:center;
@@ -212,7 +212,7 @@ margin-bottom:0;
 
 /*Start of ID Selectors*/
 #newsletterHeader {
-  color:gold;
+  color: rgb(189,158,6);
 }
 
 #horizontalicons li {
@@ -279,7 +279,7 @@ margin-bottom:0;
 }
 
 #scheduleHeaderText {
-  color: gold;
+  color: rgb(189,158,6);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -290,7 +290,7 @@ margin-bottom:0;
 
 #associationContentPtag {
   color:ghostWhite;
-  border-top: 1px solid gold;
+  border-top: 1px solid rgb(189,158,6);
   padding-top: 35px;
 }
 
@@ -298,7 +298,7 @@ margin-bottom:0;
   text-align: center;
   margin:3em 0;
   padding-bottom: 3em;
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid rgb(189,158,6);
 }
 
 #associationContentImg img {
@@ -317,7 +317,7 @@ margin-bottom:0;
 }
 
 #kidsPageBullets ul li strong {
-  color: gold;
+  color: rgb(189,158,6);
   font-size: 1.25em;
 }
 
