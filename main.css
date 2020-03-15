@@ -429,3 +429,14 @@ margin-bottom:0;
   text-align: center;
   margin:0 auto;
 }
+
+.spiderWeb {
+  text-align: center;
+}
+
+.spiderWeb img {
+  width: 70%;
+  background-color: rgb(230,230,230);
+  margin:10px;
+  border-radius: 2em;"
+}
