@@ -109,15 +109,18 @@ margin-bottom:0;
 }
 
 .entry-content {
-  color: Ghostwhite;
+  color: black;
   font-weight: 100;
   font-size: 18px;
   line-height: 1.4em;
   margin-bottom: 40px;
   padding-bottom:25px;
   min-height:500px;"
+  text-align: center;
 }
-
+.kidsPimagw {
+  margin:0 auto;
+}
 .aboutWhatH3 {
   box-sizing: border-box;
   display: block;
@@ -224,6 +227,9 @@ margin-bottom:0;
 .academyPhoto {
   width:60%;
 }
+.kidsLi {
+  margin:1em;
+}
 /*
 .aboutWhatInnerHolder {
   width:45%;
@@ -268,6 +274,15 @@ margin-bottom:0;
 #AboutWhatbannerPhoto {
   background-image: url("./images/armbarphoto.jpeg");
   height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+#kidsbannerPhoto{
+  background-image: url("./images/matheusLuna.jpg");
+  height: 450px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -333,7 +348,9 @@ margin-bottom:0;
 }
 
 #kidsPagePtag {
-  padding-top: 3em;
+  padding-top: 1.5em 2em;
+  color:black;
+  font-size: 1.1em;
 }
 
 #kidsPageBullets {
