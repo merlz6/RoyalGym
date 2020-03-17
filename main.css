@@ -47,7 +47,10 @@ margin-bottom:0;
   background-color: rgb(230,230,230);
 
 }
-
+.nav-item {
+  margin:.9em;
+  font-size:1.30em;
+}
 .footerlogo {
   width: 85%;
   height: 85%;
