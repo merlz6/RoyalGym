@@ -255,8 +255,14 @@ margin-bottom:0;
   display: inline;
 }
 
+#homePageTitle {
+  text-align: center;
+  padding: 230px;
+  font-weight: bold;
+}
+
 #bannerPhoto {
-  background-image: url("https://www.essentialbjj.com/wp-content/uploads/2017/03/img-main-1.jpg");
+  background-image: url(./images/main_hero_photo.jpg);
   height: 475px;
   background-position: center;
   background-repeat: no-repeat;
@@ -446,15 +452,32 @@ margin-bottom:0;
 }
 
 @media (max-width: 770px) {
+  #adultColDiv {
+    text-align: center;
+    display: inline;
+    margin:0 auto;
+  }
+  .row{
+    display: inline;
+    text-align: center;
+  }
+}
 
-#adultColDiv {
+#testimonialText {
   text-align: center;
-  display: inline;
-  margin:0 auto;
-}
-.row{
-  display: inline;
-text-align: center;
+  width: 100%;
 }
 
- }
+#testimonialHeader {
+  padding-top: 10px; 
+  color: rgb(189,158,6);
+}
+
+#testimonialContainer {
+ background-color: rgb(230,230,230);
+ padding-bottom: 10px;
+ height: 250px;
+}
+
+.carousel-control-prev {
+}
