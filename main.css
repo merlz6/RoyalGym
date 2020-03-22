@@ -8,14 +8,15 @@ body {
 p {
   color:black;
   font-family: Montserrat;
+  font-size: 1.2em;
 }
 
 a {
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
 }
 
 h3 {
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
   /* margin-left: 2em;
   padding-top: 1em; */
 }
@@ -48,6 +49,15 @@ margin-bottom:0;
   background-color: rgb(230,230,230);
 
 }
+/*Need to be fixed cant see it*/
+/*.navbar-toggler {
+  color: rgb(189,158,40);
+}*/
+
+.navbar-toggler-icon {
+  background-color: rgb(189,148,40);  
+}
+
 .nav-item {
   margin:.9em;
   font-size:1.30em;
@@ -62,16 +72,16 @@ margin-bottom:0;
   background-color: white;
   color: rgb(189,158,6);
   width: 100%;
-  border-top:1px solid rgb(189,158,6);
+  border-top:1px solid rgb(189,148,45);
 }
 
 .btn-primary {
   background-color: darkGrey;
-  border-color: rgb(189,158,6);
+  border-color: rgb(189,148,45);
 }
 
 .btn-primary:hover {
-  background-color: rgb(189,158,6);
+  background-color: rgb(189,148,45);
 }
 
 .footerSMicons {
@@ -90,7 +100,7 @@ margin-bottom:0;
   flex-direction: row;
   margin: 15px;
   padding: 10px;
-  border-bottom: 1px solid rgb(189,158,6);
+  border-bottom: 1px solid rgb(189,148,45);
 }
 
 .instructorPhoto {
@@ -140,19 +150,20 @@ margin-bottom:0;
   margin-inline-start: 0px;
   margin-top: 20px;
   text-size-adjust: 100%;
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
   margin-top:40px;
+  border-bottom:1px solid rgb(189,148,45);
 }
 
 .adultsh5{
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
   font-size:1.5em;
 }
 
 .iconShell {
 
   justify-content: space-around;
-  color: rgb(189,158,6);
+  color: rgb(189,158,45);
   display:flex;
   flex-direction:row;
   text-align:center;
@@ -248,7 +259,7 @@ margin-bottom:0;
 
 /*Start of ID Selectors*/
 #newsletterHeader {
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
 }
 
 #horizontalicons li {
@@ -310,7 +321,7 @@ margin-bottom:0;
 }
 
 #homePageAddress {
-  margin:50px 0 0 0;
+  margin:50px 0 20px 0;
   color: black;
 }
 
@@ -330,7 +341,7 @@ margin-bottom:0;
 }
 
 #scheduleHeaderText {
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -341,7 +352,7 @@ margin-bottom:0;
 
 #associationContentPtag {
   color:black;
-  border-top: 1px solid rgb(189,158,6);
+  border-top: 1px solid rgb(189,148,48);
   padding-top: 35px;
   font-size: 1.2em;
 }
@@ -350,7 +361,7 @@ margin-bottom:0;
   text-align: center;
   margin:3em 0;
   padding-bottom: 3em;
-  border-bottom: 1px solid rgb(189,158,6);
+  border-bottom: 1px solid rgb(189,148,46);
 }
 
 #associationContentImg img {
@@ -371,7 +382,7 @@ margin-bottom:0;
 }
 
 #kidsPageBullets ul li strong {
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
   font-size: 1.25em;
 }
 
@@ -448,7 +459,7 @@ margin-bottom:0;
   width: 70%;
   background-color: rgb(230,230,230);
   margin:10px;
-  border-radius: 2em;"
+  border-radius: 2em;
 }
 
 @media (max-width: 770px) {
@@ -470,23 +481,72 @@ margin-bottom:0;
 
 #testimonialHeader {
   padding-top: 10px;
-  color: rgb(189,158,6);
+  color: rgb(189,148,45);
 }
 
 #testimonialContainer {
  background-color: rgb(230,230,230);
  padding-bottom: 10px;
  height: 250px;
+ border-radius: 2em;
 
+}
+@media (max-width: 1200px) {
+  #testimonialContainer {
+    background-color: rgb(230,230,230);
+    padding-bottom: 10px;
+    height: 275px;
+    border-radius: 2em;
+  }
+}
+
+@media (max-width: 995px) {
+  #testimonialContainer {
+    background-color: rgb(230,230,230);
+    padding-bottom: 10px;
+    height: 375px;
+    border-radius: 2em;
+  }
+}
+
+
+@media (max-width: 770px) {
+  #testimonialContainer {
+    background-color: rgb(230,230,230);
+    padding-bottom: 10px;
+    height: 450px;
+    border-radius: 2em;
+  }
+}
+
+#testimonialTextPTag {
+  padding: 0px 10px 0px 10px;
+  font-size: 1em;
 }
 
 .carousel-control-prev {
 }
 .homepageParagraph {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom:1em;
   margin-top:1em;
 }
 .homepageHeader{
-  margin:1em 0;
+  box-sizing: border-box;
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  height: 38px;
+  line-height: 38px;
+  margin-block-end: 20px;
+  margin-block-start: 20px;
+  margin-bottom: 20px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 20px;
+  text-size-adjust: 100%;
+  color: rgb(189,148,45);
+  margin-top:40px;
+  border-bottom:1px solid rgb(189,148,45);
 }
