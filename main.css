@@ -49,7 +49,10 @@ margin-bottom:0;
   background-color: rgb(230,230,230);
 
 }
-/*Need to be fixed cant see it*/
+/*
+  Need to be fixed cant see it but
+  Made it gold so we can see for now
+*/
 /*.navbar-toggler {
   color: rgb(189,158,40);
 }*/
@@ -331,6 +334,22 @@ margin-bottom:0;
   margin:25px;
   justify-content:space-around;
   min-height:600px;
+}
+
+
+/*
+  Not fully understanding the code here.
+  Smaller than 900px leads to only half
+  the page being covered with the divs
+*/
+@media (max-width: 900px) {
+  #contactPageCardDiv {
+    display:inline;
+    text-align: center;
+    margin:25px;
+    justify-content:space-around;
+    min-height:600px;
+  }
 }
 
 #contactPageAddress {

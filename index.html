@@ -151,11 +151,13 @@
       <!-- User Input -->
       <div class="card text-center" style="margin:0 auto; margin-bottom:2.5em;">
         <div class="card-body">
-          <div class="form-group ">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-          </div>
-          <a href="#" class="btn btn-primary">Join Now</a>
+          <form action="newsletterHandler.php" method="post"> 
+            <div class="form-group ">
+              <label for="inputEmail4">Email</label>
+              <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              <button type="submit" name="submit" class="btn btn-primary" style="margin-top: 10px;">Join Now</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
