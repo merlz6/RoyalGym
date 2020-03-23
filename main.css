@@ -49,6 +49,10 @@ margin-bottom:0;
   background-color: rgb(230,230,230);
 }
 
+.navbar-left {
+  width: 50%;
+}
+
 .nav-item {
   margin:.9em;
   font-size:1.30em;
@@ -275,6 +279,26 @@ margin-bottom:0;
   text-align: center;
   padding: 230px;
   font-weight: bold;
+  font-size: 3em;
+}
+
+
+@media (max-width: 980px) {
+  #homePageTitle {
+    text-align: center;
+    padding: 230px;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 780px) {
+  #homePageTitle {
+    text-align: center;
+    padding: 230px;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
 }
 
 #bannerPhoto {
@@ -338,22 +362,20 @@ margin-bottom:0;
   min-height:600px;
 }
 
-
-/*
-  Not fully understanding the code here.
-  Smaller than 900px leads to only half
-  the page being covered with the divs
-*/
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   #contactPageCardDiv {
     display:inline;
+    vertical-align: middle;
     text-align: center;
-    margin:25px;
+    margin: 25px;
     justify-content:space-around;
-    min-height:600px;
+    min-height: 600px;
+  }
+  #card {
+    text-align: center;
   }
 }
-
+*/
 #contactPageAddress {
   position: absolute;
   bottom: 0;
@@ -391,6 +413,11 @@ margin-bottom:0;
 @media (max-width: 770px) {
   #associationTitle {
     font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  #associationTitle {
+    font-size: 18px;
   }
 }
 
@@ -443,7 +470,7 @@ margin-bottom:0;
 }
 
 #adultPics {
-  width:50%;
+
   text-align:center;
 }
 
@@ -452,13 +479,9 @@ margin-bottom:0;
 }
 
 #adultColLeft {
-  width:50%;
   text-align:center;
 }
 
-#adultColRight {
-  width: 50%;
-}
 
 .videoWrapper {
   position: relative;
@@ -500,6 +523,18 @@ margin-bottom:0;
   }
 }
 
+@media (max-width: 1200px) {
+  #adultColDiv {
+    text-align: center;
+    display: inline;
+    margin:0 auto;
+  }
+  .row{
+    display: inline;
+    text-align: center;
+  }
+}
+
 #testimonialText {
   text-align: center;
   width: 100%;
@@ -526,7 +561,7 @@ margin-bottom:0;
   }
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1020px) {
   #testimonialContainer {
     background-color: rgb(230,230,230);
     padding-bottom: 10px;
@@ -539,16 +574,26 @@ margin-bottom:0;
   #testimonialContainer {
     background-color: rgb(230,230,230);
     padding-bottom: 10px;
-    height: 450px;
+    height: 500px;
     border-radius: 2em;
   }
 }
 
-@media (max-width: 769px) {
+
+@media (max-width: 750px) {
   #testimonialContainer {
     background-color: rgb(230,230,230);
     padding-bottom: 10px;
-    height: 500px;
+    height: 600px;
+    border-radius: 2em;
+  }
+}
+
+@media (max-width: 590px) {
+  #testimonialContainer {
+    background-color: rgb(230,230,230);
+    padding-bottom: 10px;
+    height: 750px;
     border-radius: 2em;
   }
 }

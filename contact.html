@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title> Royal Jiu Jitsu Academy</title>
   <link rel="shortcut icon" href="./images/crown.jpg" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -63,45 +64,44 @@
 
 <!-- DIV HOLDING BOTH CARDS -->
 <div id="contactPageCardDiv">
-<!-- LEFT SIDE CARD BELOW -->
+  <!-- LEFT SIDE CARD BELOW -->
   <div class="card">
-
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.574288193472!2d-73.64150404928999!3d40.749392043163105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c287f7242fbc43%3A0xe53a5b5f55b10adb!2s105%20Jericho%20Turnpike%2C%20Mineola%2C%20NY%2011501!5e0!3m2!1sen!2sus!4v1584217338407!5m2!1sen!2sus" class="card-img-top" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="card-body">
-    <h5 class="card-title text-center">Royal Jiu Jitsu Academy</h5>
-    <address class="card-text text-center">105 Jericho Turnpike, <br />
+      <h5 class="card-title text-center">Royal Jiu Jitsu Academy</h5>
+      <address class="card-text text-center">105 Jericho Turnpike, <br />
       Mineola, New York 11501
-    </address>
+      </address>
+    </div>
   </div>
-</div>
-<!-- END of LEFT CARD -->
+  <!-- END of LEFT CARD -->
 
-<!-- RIGHT SIDE CARD BELOW -->
+  <!-- RIGHT SIDE CARD BELOW -->
   <div class="card" >
-          <h2 class="font-weight-bold my-4">Contact Us</h2>
+    <h2 class="font-weight-bold my-4">Contact Us</h2>
     <form class="contactForm" action="contactFormHandler.php" method="post">
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputFirstName">First Name</label>
-        <input name="first" type="text" class="form-control" id="inputFirstName" placeholder="First name">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputFirstName">First Name</label>
+          <input name="first" type="text" class="form-control" id="inputFirstName" placeholder="First name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputLastName">Last Name</label>
+          <input name="last" type="text" class="form-control" id="inputLastName" placeholder="Last name">
+        </div>
       </div>
-      <div class="form-group col-md-6">
-        <label for="inputLastName">Last Name</label>
-        <input name="last" type="text" class="form-control" id="inputLastName" placeholder="Last name">
+      <div class="form-group ">
+        <label for="inputEmail4">Email</label>
+        <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
       </div>
-    </div>
-    <div class="form-group ">
-      <label for="inputEmail4">Email</label>
-      <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group">
-     <label for="exampleFormControlTextarea1">Message</label>
-     <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Message"></textarea>
-   </div>
-    <button name="submit" type="submit" class="btn btn-primary">Send</button>
-  </form>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Message"></textarea>
+      </div>
+          <button name="submit" type="submit" class="btn btn-primary">Send</button>
+    </form>
   </div>
-<!-- END OF RIGHT CARD -->
+  <!-- END OF RIGHT CARD -->
 </div>
 
 <!-- FOOTER BELOW-->
