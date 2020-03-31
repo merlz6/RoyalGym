@@ -1,0 +1,217 @@
+<?php
+  // Alert Vars
+  $fieldAlert = "";
+  $fieldAlertClass = "";
+
+  if(filter_has_var(INPUT_POST, 'submit')) {
+    
+    // Contact form data
+    $firstName = htmlspecialchars($_POST['first']);
+    $lastName = htmlspecialchars($_POST['last']);
+    $emailFrom = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+    
+    // Check required fields
+    if(!empty($emailFrom) && !empty($firstName) && !empty(lastName) && !empty(message)) {
+      // Passed
+      // Check Email
+      if(filter_var($emailFrom, FILTER_VALIDATE_EMAIL) === false) {
+        // Failed
+        $fieldAlert = "Please use a valid email!";
+        $fieldAlertClass = "alert-danger";
+      } else {
+        // Passed
+        $mailTo = "contact@royaljiujitsuacademy.com"
+        $subject = "Contact Request From: ".$firstName." ".$lastName;
+        $body = '
+          <h2>Contact Request</h2>
+          <h4>Name</h4><p>'.$firstName.' '.$lastName.'</p>
+          <h4>Email</h4><p>'.$emailFrom.'</p>
+          <h4>Message</h4><p>'.$message.'</p>
+        ';
+        // Email Headers
+        $headers = "MIME-Version: 1.0"."\r\n";
+        $headers .= "Content-Type:text/html;charset=UTF-8"."\r\n";
+        // Additional Headers
+        $headers .= "From: ".$firstName." ".$lastName." <".$emailFrom.">"."\r\n";
+        if (mail($mailTo, $subject, $body, $headers)) {
+          // Email Sent
+          $fieldAlert = "Your email has been sent!";
+          $fieldAlertClass = "alert-success";
+        } else {
+          // Failed
+          $fieldAlert = "Email was not sent!";
+          $fieldAlertClass = "alert-danger";
+        }
+        header("Location: contact.php");
+      }
+    } else {
+      // Failed
+      $fieldAlert = "Please fill in all fields!";
+      $fieldAlertClass = "alert-danger";
+    }
+  }
+?>
+<!-- End of PHP -->
+<!-- Start of HTML -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Royal Jiu Jitsu Academy</title>
+  <link rel="shortcut icon" href="./images/crown.jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</head>
+<!-- BODY -->
+
+<body>
+  <!-- START OF NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    
+    <a href="./index.html" class="navbar-left"><img class="logonav" src="./images/crown-removebg-preview.png" /></a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon icon-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.php">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./whatisjiujitsu.html">What is Jiu Jitsu</a>
+            <a class="dropdown-item" href="./academy.html">Academy</a>
+            <a class="dropdown-item" href="./instructors.html">Instructors</a>
+            <a class="dropdown-item" href="./association.html">Marcelo Garcia Association</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Classes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./adults.html">Adults</a>
+            <a class="dropdown-item" href="./kids.html">Kids</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.php">Contact<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./schedule.html">Schedule</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- END OF NAVBAR -->
+
+<!-- DIV HOLDING BOTH CARDS -->
+<div id="contactPageCardDiv">
+  <!-- LEFT SIDE CARD BELOW -->
+  <div class="card">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.574288193472!2d-73.64150404928999!3d40.749392043163105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c287f7242fbc43%3A0xe53a5b5f55b10adb!2s105%20Jericho%20Turnpike%2C%20Mineola%2C%20NY%2011501!5e0!3m2!1sen!2sus!4v1584217338407!5m2!1sen!2sus" class="card-img-top" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="card-body">
+      <h5 class="card-title text-center">Royal Jiu Jitsu Academy</h5>
+      <address class="card-text text-center">105 Jericho Turnpike, <br />
+      Mineola, New York 11501 <br />
+      contact@royaljiujitsuacademy.com
+      </address>
+    </div>
+  </div>
+  <!-- END of LEFT CARD -->
+
+  <!-- RIGHT SIDE CARD BELOW -->
+  <div class="card">
+    <?php if($fieldAlert != ""): ?>
+    <div class="alert <?php echo $fieldAlertClass; ?>">
+      <?php echo $fieldAlert; ?>
+    </div>
+    <?php endif; ?>
+    <h2 class="font-weight-bold my-4">Contact Us</h2>
+    <form class="contactForm" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputFirstName">First Name</label>
+          <input name="first" type="text" class="form-control" id="inputFirstName" placeholder="First name" value="<?php echo isset($_POST['firstName']) ? $firstName : ''; ?>">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputLastName">Last Name</label>
+          <input name="last" type="text" class="form-control" id="inputLastName" placeholder="Last name" value="<?php echo isset($_POST['lastName']) ? $lastName : ''; ?>">
+        </div>
+      </div>
+      <div class="form-group ">
+        <label for="inputEmail4">Email</label>
+        <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email" value="<?php echo isset($_POST['emailFrom']) ? $emailFrom : ''; ?>">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Message" ><?php echo isset($_POST['message']) ? $message : ''; ?>
+        </textarea>
+      </div>
+          <button name="submit" type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+  <!-- END OF RIGHT CARD -->
+</div>
+
+<!-- FOOTER BELOW-->
+  <div class="Container footerDiv">
+    <div class="row">
+      <div class="col-sm">
+        <div class="col-sm columns">
+          <a href="#" class="navbar-left"><img class="footerlogo" src="./images/royalLogo.jpg" /></a>
+        </div>
+      </div>
+      <div class="col-sm text-center">
+
+        <p id="homePageAddress">
+          105 Jericho Turnpike,<br />
+          Mineola, NY 11501 <br />
+          (516) 788-1733
+        </p>
+
+      </div>
+      <div class="col-sm text-center socialmediaDiv">
+        <label class="followUsAtFooter" style="margin-top: 20px">Follow us at</label>
+        <ul class="list-unstyled" id="horizontalicons">
+          <li>
+            <a href="https://www.facebook.com/Royal-Jiu-Jitsu-Academy-111787443727468/?modal=admin_todo_tour" target="_blank">
+              <img class="footerSMicons" src="./images/iconfinder_BW_Facebook_2_glyph_svg_5305153.svg">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCGnTZYpXWmT4Bi575TL-X8g/featured" target="_blank">
+              <img class="footerSMicons" src="./images/iconfinder_BW_Youtube_glyph_svg_5305164.svg">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/royaljiujitsu_/" target="_blank">
+              <img class="footerSMicons" src="./images/iconfinder_Instagram_glyph_svg_5335781.svg">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/royaljiujitsu" target="_blank">
+              <img class="footerSMicons" src="./images/iconfinder_BW_Twitter_glyph_svg_5305170.svg">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- end of footer -->
+</body>
+
+</html>
